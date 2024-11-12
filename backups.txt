@@ -1,0 +1,507 @@
+Invited speakers
+
+<!-- 
+    ==========================
+      Speakers Section (in to_reuse.html)
+    ============================ -->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Keynote Speakers</h2>
+          <p>We hosted the following outstanding speakers.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <!-- <img src="img/speakers/haris-640x480.png" alt="Haris Pozidis" class="img-fluid"> -->
+              <img src="img/speakers/Faturu-640.jpg" alt="Panagiota Fatourou" class="img-fluid">
+              <div class="details">
+                <h3><a href="panagotia-details.html">Panagiota Fatourou, University of Crete</a></h3>
+                <!-- <p>17.12.2019</p> -->
+                <div class="social">
+                  <a href="http://users.ics.forth.gr/~faturu/"><i class="fa fa-university"></i></a>
+                 <!--a href=""><i class="fa fa-facebook"></i></a-->
+                 <!--a href=""><i class="fa fa-google-plus"></i></a-->
+                 <!--a href=""><i class="fa fa-linkedin"></i></a-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/Victor-640.jpg" alt="Victor Luchangco" class="img-fluid">
+              <div class="details">
+                <h3><a href="victor-details.html">Victor Luchangco, Algorand</a></h3>
+                <!-- <p>18.12.2019</p> -->
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/victor-luchangco-8b0971b/"><i class="fa fa-university"></i></a>
+                  <!--a href=""><i class="fa fa-facebook"></i></a-->
+                  <!--a href=""><i class="fa fa-google-plus"></i></a-->
+                  <!--a href=""><i class="fa fa-linkedin"></i></a-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/Seb-640.jpg" alt="Sébastien Tixeuil" class="img-fluid">
+              <div class="details">
+                <h3><a href="sebastien-details.html">Sébastien Tixeuil, Sorbonne Université</a></h3>
+                <!-- <p>19.12.2019</p> -->
+                <div class="social">
+                  <a href="https://www-npa.lip6.fr/~tixeuil/wiki/pmwiki.php"><i class="fa fa-university"></i></a>
+                  <!--a href=""><i class="fa fa-facebook"></i></a-->
+                  <!--a href=""><i class="fa fa-google-plus"></i></a-->
+                  <!--a href=""><i class="fa fa-linkedin"></i></a-->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    SCHEDULE
+
+    
+      <section id="schedule" class="section-with-bg">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>Program</h2>
+            <!-- <p>Please note that the program can be subject to minor modifications.</p> -->
+            <p>All paper presentations are scheduled for 18 minutes, plus Q&A and setup.</p>
+          </div>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Tue 13.12.22</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Wed 14.12.22</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Thu 15.12.22</a>
+            </li>
+          </ul>
+
+          <div class="tab-content row justify-content-center">
+
+            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:00</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/registration.jpg"/></div>
+                  <h4>Registration</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>09:00</time></div>
+                <div class="col-md-10">
+                  <h4>Opening</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>09:15</time></div>
+                <div class="col-md-10">
+                  <h4>Keynote Speaker: <span>Victor Luchangco, Algorand</span></h4>
+  				<span>Session chair: Eshcar Hillel</span>
+                  <p><a href="victor-details.html">Theory Meeting Practice in the Algorand Blockchain</a></p>
+                  <a href="slides/OPODIS2022-slides-Luchangco.pdf">Slides available!</a>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:15</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/coffee.jpg"/></div>
+                  <h4>Coffee Break</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:45</time></div>
+                <div class="col-md-10">
+                  <h4>Session 1: Concurrent data structures. <span>Chair: François Taïani</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Colette Johnen and Adnane Khattabi (Univ. Bordeaux, CNRS, Bordeaux INP, LaBRI, UMR 5800, Talence, France) and Alessia Milani (Univ. Aix-Marseille, CNRS, LIS, UMR 7020, Marseille, France).
+    <span class="title"><strong>Efficient Wait-free Queue Algorithms with Multiple Enqueuers and Multiple Dequeuers</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Gali Sheffi and Erez Petrank (Technion) and Pedro Ramalhete (Cisco Systems).
+    <span class="title"><strong>EEMARQ: Efficient Lock-Free Range Queries with Memory Reclamation</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Hagit Attiya (Technion) and Faith Ellen (University of Toronto).
+    <span class="title"><strong>The Step Complexity of Multidimensional Approximate Agreement</strong></span>
+  <a href="slides/OPODIS2022-slides-Ellen.pdf">Slides available!</a></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Trevor Brown and Rosina Kharal (University of Waterloo).
+    <span class="title"><strong>Performance Anomalies in Concurrent Data Structure Microbenchmarks</strong></span></li>
+
+  </ul>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:25</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/lunch.jpg"/></div>
+                  <h4>Lunch</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>13:55</time></div>
+                <div class="col-md-10">
+                  <h4>Session 2: Blockchain and Distributed Ledgers 1. <span>Chair: Michel Raynal</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Fernando Pedone and Enrique Fynn (University of Lugano, Switzerland), Robert Soulé (Yale University), and Zarko Milosevic and Ethan Buchman (Informal Systems).
+    <span class="title"><strong>Robust and Fast Blockchain State Synchronization</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span> Rodrigo Queiroz Saramago, Hein Meling, and Leander Jehl (University of Stavanger).
+    <span class="title"><strong>A Privacy-Preserving and Transparent Certification System for Digital Credentials</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Ignacio Amores-Sesar and Christian Cachin (University of Bern) and Enrico Tedeschi (The Artic University of Norway).
+    <span class="title"><strong>When is Spring coming? A Security Analysis of Avalanche Consensus</strong></span></li>
+    
+  </ul>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>15:10</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/coffee.jpg"/></div>
+                  <h4>Coffee Break</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>15:40</time></div>
+                <div class="col-md-10">
+                  <h4>Session 3: Mobile agents and robots. <span>Chair: Quentin Bramas</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Taichi Inoue, Naoki Kitamura, Taisuke Izumi, and Toshimitsu Masuzawa (Osaka University).
+    <span class="title"><strong>Computational Power of A Single Oblivious Mobile Agent in Two-Edge-Connected Graphs</strong></span> <a href="slides/OPODIS2022-slides-Inoue.pdf">Slides available!</a></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Jared Coleman (University of Southern California), Evangelos Kranakis (Carleton University, Ottawa, Ontario, Canada), Danny Krizanc (Wesleyan University, Middletown CT, USA), and Oscar Morales Ponce (California State University, Long Beach, CA, USA).
+    <span class="title"><strong>Line Search for an Oblivious Moving Target</strong></span>
+    <a href="slides/OPODIS2022-slides-Coleman.pdf">Slides available!</a>
+  </li>
+    
+  </ul>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>16:30</time></div>
+                <div class="col-md-10">
+                  <h4>Business Meeting <span>(until 17:00)</span></h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>18:30</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/ZINNEBIR.gif"/></div>
+                  <h4>Reception in city center with drinks and food (De Markten, Place sainte Catherine) <span> (until 21:00)</span></h4>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:00</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/registration.jpg"/></div>
+                  <h4>Registration</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>09:00</time></div>
+                <div class="col-md-10">
+                  <h4>Keynote: <span>Panagiota Fatourou, University of Crete</span></h4>
+  				<span>Chair: Pascal Felber</span>
+                  <p><a href="panagotia-details.html">Recoverable Computing</a></p>
+                  <a href="slides/OPODIS2022-slides-Fatourou.pdf">Slides available!</a>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:00</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/coffee.jpg"/></div>
+                  <h4>Coffee Break</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:30</time></div>
+                <div class="col-md-10">
+                  <h4>Session 4: Mobile robots gathering. <span>Chair: Naoki Kitamura</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>John Augustine, Arnhav Datar, and Nischith Shadagopan M N (Indian Institute of Technology Madras).
+    <span class="title"><strong>Randomized Byzantine Gathering in Rings</strong></span> <a href="slides/OPODIS2022-slides-Shadagopan.pdf">Slides available!</a></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Yonghwan Kim (Nagoya Institute of Technology), Masahiro Shibata (Kyushu Institute of Technology), Yuichi Sudo (Hosei University), Junya Nakamura (Toyohashi University of Technology), Yoshiaki Katayama (Nagoya Institute of Technology), and Toshimitsu Masuzawa (Osaka University).
+    <span class="title"><strong>Gathering of Mobile Robots with Defected Views</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Jannik Castenow, Jonas Harbig, and Daniel Jung (Paderborn University), Peter Kling (Universität Hamburg), and Till Knollmann and Friedhelm Meyer auf der Heide (Paderborn University).
+    <span class="title"><strong>A Unifying Approach to Efficient (Near-)Gathering of Disoriented Robots with Limited Visibility</strong></span> <a href="slides/OPODIS2022-slides-Harbig.pdf">Slides available!</a></li>
+    
+  </ul>
+                </div>
+              </div>
+              
+                  <div class="row schedule-item">
+                    <div class="col-md-2"><time>11:45</time></div>
+                    <div class="col-md-10">
+                      <h4>Featured industry presentation:
+                        <span>Armando Santos, Well-Typed and Input-Output</span>
+                      </h4>
+      				<span>Chair: Etienne Rivière</span>
+                      <p><a href="armando-details.html">How to build a Distributed System with Real-time Constraints using concurrent Functional Programming tools</a></p>
+                      <a href="slides/OPODIS2022-slides-Santos.pdf">Slides available!</a>
+                    </div>
+                  </div>
+                              
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:15</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/lunch.jpg"/></div>
+                  <h4>Lunch.</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>13:45</time></div>
+                <div class="col-md-10">
+                  <h4>Session 5: Blockchain and Distributed Ledgers 2. <span>Chair: Isaac Sheff</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Ittai Abraham (VMWare Research) and Gilad Stern (The Hebrew University of Jerusalem).
+    <span class="title"><strong>New Dolev-Reischuk Lower Bounds Meet Blockchain Eclipse Attacks</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Christian Cachin (University of Bern), Giuliano Losa (Stellar Development Foundation), and Luca Zanolini (University of Bern).
+    <span class="title"><strong>Quorum Systems in Permissionless Networks</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Shir Cohen and Idit Keidar (Technion) and Alexander Spiegelman (Aptos).
+    <span class="title"><strong>Make Every Word Count: Adaptive Byzantine Agreement with Fewer Words</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Sarah Azouvi (Protocol Labs), Christian Cachin and Duc V. Le (University of Bern), Marko Vukolic (Protocol Labs), and Luca Zanolini (University of Bern).
+    <span class="title"><strong>Modeling Resources in Permissionless Longest-chain Total-order Broadcast</strong></span></li>
+    
+  </ul>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>15:25</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/coffee.jpg"/></div>
+                  <h4>Coffee Break</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>15:55</time></div>
+                <div class="col-md-10">
+                  <h4>Session 6: Distributed graph algorithms. <span>Chair: Faith Ellen, until 16:45</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Pierre Fraigniaud (IRIF, Université Paris Cité and CNRS, France.), Pedro Montealegre (Universidad Adolfo Ibáñez), Pablo Paredes and Ivan Rapaport (Universidad de Chile), Martín Ríos-Wilson (Universidad Adolfo Ibáñez), and Ioan Todinca (Université d'Orléans).
+    <span class="title"><strong>Computing Power of Hybrid Models in Synchronous Networks</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Darya Melnyk and Jukka Suomela (Aalto University) and Neven Villani (ENS Paris-Saclay).
+    <span class="title"><strong>Mending Partial Solutions With Few Changes</strong></span> <a href="slides/OPODIS2022-slides-Villani.pdf">Slides available!</a></li>
+    
+  </ul>
+                </div>
+              </div>
+              <!-- <div class="row schedule-item">
+                <div class="col-md-2"><time>16:45</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/automata-zoom.jpg"/></div>
+                  <h4>Free time</h4>
+          <p><a href="https://www.mahn.ch/expositions/automates-jaquet-droz/">Automates Jaquet-Droz</a></p>
+                </div>
+              </div> -->
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>18:30</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/horta.jpg"/></div>
+                  <h4>Banquet <span>(until 22:30)</span></h4>
+  				<p><a href="https://www.comicscenter.net/en/home">Comics Art Museum and Horta brasserie</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-3">
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:45</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/registration.jpg"/></div>
+                  <h4>Registration</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>09:30</time></div>
+                <div class="col-md-10">
+                  <!-- <div class="speaker">
+                    <img src="img/speakers/rachid-640x480.jpg" alt="Rachid Guerraoui"/>
+                  </div> -->
+                  <h4>Keynote: <span>Sébastien Tixeuil, Sorbonne University, CNRS, LIP6, Institut Universitaire de France</span></h4>
+  				<span>Chair: Roberto Palmieri</span>
+                  <p><a href="sebastien-details.html">Realistic Self-stabilization</a></p>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:30</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/coffee.jpg"/></div>
+                  <h4>Coffee Break</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00</time></div>
+                <div class="col-md-10">
+                  <h4>Session 7: Consensus. <span>Chair: Christian Cachin</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Shihao Liu (University of Toronto).
+    <span class="title"><strong>The Impossibility of Approximate Agreement on a Large Class of Graphs</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Petra Berenbrink (Universität Hamburg), Amin Coja-Oghlan, Oliver Gebhard, and Max Hahn-Klimroth (TU Dortmund University), Dominik Kaaser (TU Hamburg), and Malin Rau (Universität Hamburg).
+    <span class="title"><strong>On the Hierarchy of Distributed Majority Protocols</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Sravya Yandamuri (Duke University), Ittai Abraham (VMware Research), and Kartik Nayak and Michael Reiter (Duke University).
+    <span class="title"><strong>Communication-Efficient BFT Using Small Trusted Hardware to Tolerate Minority Corruption</strong></span></li>
+    
+  </ul>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:15</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/lunch.jpg"/></div>
+                  <h4>Lunch <span>(with possibility for take-away)</span></h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>13:45</time></div>
+                <div class="col-md-10">
+                  <h4>Session 8: Networks. <span>Chair: Bernadette Charron-Bost</span></h4>
+  <ul class="fa-ul">
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Neta Rozen Schiff (The Hebrew University of Jerusalem), Klaus-Tycho Foerster (TU Dortmund), Stefan Schmid (University of Vienna & TU Berlin), and David Hay (The Hebrew University of Jerusalem).
+    <span class="title"><strong>Chopin: Combining Distributed and Centralized Schedulers for Self-Adjusting Datacenter Networks</strong></span></li>
+    
+    <li><span class="fa-li"><i class="fa fa-file"></i></span>Timothé Albouy (IRISA), Davide Frey (Inria), and Michel Raynal and François Taïani (IRISA).
+    <span class="title"><strong>A Modular Approach to Construct Signature-Free BRB Algorithms under a Message Adversary</strong></span>
+      <a href="slides/OPODIS2022-slides-Albouy.pdf">Slides available!</a>
+    </li>
+    
+  </ul>
+                </div>
+              </div>
+              
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>14:35</time></div>
+                <div class="col-md-10">
+                  <div class="speaker"><img src="img/social/coffee.jpg"/></div>
+                  <h4>Short break</h4>
+                </div>
+              </div>
+              
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>14:45</time></div>
+                <div class="col-md-10">
+                  <h4>Session 9: Self-stabilizing systems. <span>Chair: Sébastien Tixeuil</span></h4>
+  <ul class="fa-ul">
+      <li><span class="fa-li"><i class="fa fa-file"></i></span>Yuval Emek, Yuval Gil, and Noga Harlev (Technion).
+      <span class="title"><strong>Design of Self-Stabilizing Approximation Algorithms Via a Primal-Dual Approach</strong></span></li>
+    
+      <li><span class="fa-li"><i class="fa fa-file"></i></span>Bernadette Charron-Bost (DI ENS, École Normale Supérieure, 75005 Paris, France) and Louis Penet de Monterno (École polytechnique, IP Paris, 91128 Palaiseau, France).
+      <span class="title"><strong>Self-stabilizing clock synchronization in dynamic networks</strong></span></li>
+  </ul>
+                </div>
+              </div>
+              
+              
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>15:35</time></div>
+                <div class="col-md-10">
+                  <h4>Closing</h4>
+                </div>
+              </div>
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>15:45</time></div>
+                <div class="col-md-10">
+                  <h4>End of OPODIS 2022</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+REGISTRAZIONI
+
+<div class="row">
+          <!-- student -->
+          <div class="col-lg-3">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Student</h5>
+                <!-- <h6 class="card-price text-center">(until 18/11/2022)</h6> -->
+                <h6 class="card-price text-center">Until 18/11/2022: <strong>300 euros</strong></h6>
+                <h6 class="card-price text-center">From 18/11/2022 and until 2/12/2022: <strong>400 euros</strong></h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-users"></i></span>Conference attendance</li>
+                  <li><span class="fa-li"><i class="fa fa-shopping-bag"></i></span>Conference Kit</li>
+                  <li><span class="fa-li"><i class="fa fa-file"></i></span>Electronic copy of the proceedings</li>
+                  <li><span class="fa-li"><i class="fa fa-coffee"></i></span>Lunches and coffee breaks (13-15 Dec)</li>
+                  <li><span class="fa-li"><i class="fa fa-glass"></i></span>Welcome reception (13 Dec)</li>
+                  <li><span class="fa-li"><i class="fa fa-ticket"></i></span>Banquet (14 Dec)</li>
+                </ul>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <!-- full -->
+          <div class="col-lg-3">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Full/Author</h5>
+                <h6 class="card-price text-center">Until 18/11/2022: <strong>500 euros</strong></h6>
+                <h6 class="card-price text-center">From 18/11/2022 and until 2/12/2022: <strong>600 euros</strong></h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-users"></i></span>Conference attendance</li>
+                  <li><span class="fa-li"><i class="fa fa-shopping-bag"></i></span>Conference Kit</li>
+                  <li><span class="fa-li"><i class="fa fa-file"></i></span>Electronic copy of the proceedings</li>
+                  <li><span class="fa-li"><i class="fa fa-coffee"></i></span>Lunches and coffee breaks (13-15 Dec)</li>
+                  <li><span class="fa-li"><i class="fa fa-glass"></i></span>Welcome reception (13 Dec)</li>
+                  <li><span class="fa-li"><i class="fa fa-ticket"></i></span>Banquet (14 Dec)</li>
+                </ul>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <!-- online -->
+          <div class="col-lg-3">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Online</h5>
+                <h6 class="card-price text-center">(until 9/12/2022)</h6>
+                <h6 class="card-price text-center">Free</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-users"></i></span>Access to Zoom stream</li>
+                  <li></li>
+                  <li>Registration to receive the Zoom link should be sent by email (<a href="mailto:opodis-2022@uclouvain.be?subject=OPODIS%20Zoom%20Access&body=Include%20your%20name%20and%20institution%20in%20the%20body%20of%20the%20email.%20If%20you%20are%20an%20author%20include%20a%20copy%20of%20your%20complete%20full%20registration.">opodis-2022@uclouvain.be</a>)</li>
+                </ul>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
