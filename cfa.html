@@ -45,28 +45,56 @@
 <header class="noTrasparentHeader" id="header">
     <div class="container">
 
-        <div id="logo" class="pull-left">
-            <!-- Uncomment below if you prefer to use a text logo -->
-            <h1><a href="index.html">ACTE2026</a></h1>
-            <!--a href="#intro" class="scrollto"><img src="img/logo-opodis.png" alt="" title=""></a-->
+        <div class="desktop-menu">
+            <div id="logo" class="pull-left">
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <h1><a href="index.html">ACTE2026</a></h1>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="menu-active"><a href="#">Call For Abstract</a></li>
+                    <li><a href="cfa.html#dates">Dates</a></li>
+                    <li class="past-editions">
+                        <a>Past Editions</a>
+                        <ul id="past-editions" class="sub-nav">
+
+                        </ul>
+                    </li>
+                    <li><a href="index.html#committees">Committees</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="index.html/venue">Venue</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <nav id="nav-menu-container">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="menu-active"><a href="#">Call For Abstract</a></li>
-                <li><a href="cfa.html#dates">Dates</a></li>
-                <li class="past-editions">
-                    <a>Past Editions</a>
-                    <ul id="past-editions" class="sub-nav">
-
+        <div class="mobile-menu">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <div id="logo" class="pull-left">
+                    <!-- Uncomment below if you prefer to use a text logo -->
+                    <h1><a href="index.html">ACTE2026</a></h1>
+                </div>
+                <div id="myLinks" style="display: none;">
+                    <ul class="menu">
+                        <li class="menu-active"><a href="index.html#intro">Home</a></li>
+                        <li><a href="cfa.html">Call For Abstract</a></li>
+                        <li><a href="cfa.html#dates">Dates</a></li>
+                        <li class="past-editions">
+                            <a href="#" id="btn-mobile-menu">Past Editions<span><i>></i></span></a>
+                            <ul id="past-editions-mobile" class="sub-nav"></ul>
+                        </li>
+                        <li><a href="index.html#committees">Committees</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="index.html#venue">Venue</a></li>
                     </ul>
-                </li>
-                <li><a href="index.html#committees">Committees</a></li>
-                <li><a href="program.html">Program</a></li>
-                <li><a href="index.html/venue">Venue</a></li>
-            </ul>
-        </nav><!-- #nav-menu-container -->
+                </div>
+                <a href="#" id="burger-menu-mobile" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </header><!-- #header -->
 <br/>
@@ -188,6 +216,7 @@
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
+<script src="js/mobileMenu.js"></script>
 </body>
 
 </html>
