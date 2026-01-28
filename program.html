@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ACTE26 - Anticipating Cyber Threats’ Evolution</title>
+    <title>ACTE26 - Anticipating Cyber Threats' Evolution</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -28,12 +28,203 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
-      Theme Name: TheEvent
-      Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-      Author: BootstrapMade.com
-      License: https://bootstrapmade.com/license/
-    ======================================================= -->
+    <style>
+        .schedule-item {
+            background: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid #f82249;
+        }
+
+        .schedule-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .schedule-item.keynote {
+            border-left-color: #0e1b4d;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .schedule-item.break {
+            border-left-color: #28a745;
+            background: #f0f8f4;
+        }
+
+        .schedule-item.speaker {
+            border-left-color: #f82249;
+        }
+
+        .schedule-item.intro, .schedule-item.conclusion {
+            border-left-color: #6c757d;
+            background: #fafbfc;
+        }
+
+        .time-badge {
+            display: inline-block;
+            background: #f82249;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .keynote .time-badge {
+            background: #0e1b4d;
+        }
+
+        .break .time-badge {
+            background: #28a745;
+        }
+
+        .intro .time-badge, .conclusion .time-badge {
+            background: #6c757d;
+        }
+
+        .schedule-title {
+            color: #0e1b4d;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .schedule-speaker {
+            color: #f82249;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .schedule-speaker i {
+            margin-right: 8px;
+        }
+
+        .schedule-type {
+            display: inline-block;
+            background: rgba(248, 34, 73, 0.1);
+            color: #f82249;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .keynote .schedule-type {
+            background: rgba(14, 27, 77, 0.1);
+            color: #0e1b4d;
+        }
+
+        .break .schedule-type {
+            background: rgba(40, 167, 69, 0.1);
+            color: #28a745;
+        }
+
+        .intro .schedule-type, .conclusion .schedule-type {
+            background: rgba(108, 117, 125, 0.1);
+            color: #6c757d;
+        }
+
+        .schedule-abstract {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #eee;
+        }
+
+        .schedule-duration {
+            color: #888;
+            font-size: 13px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .program-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 0;
+        }
+
+        .program-header h2 {
+            color: #0e1b4d;
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .program-header p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .expand-btn {
+            background: none;
+            border: none;
+            color: #f82249;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .expand-btn:hover {
+            text-decoration: underline;
+        }
+
+        .abstract-full {
+            display: none;
+        }
+
+        .abstract-preview {
+            display: inline;
+        }
+
+        @media (max-width: 768px) {
+            .schedule-item {
+                padding: 20px;
+            }
+
+            .schedule-title {
+                font-size: 18px;
+            }
+
+            .program-header h2 {
+                font-size: 32px;
+            }
+        }
+
+        .timeline-connector {
+            width: 2px;
+            height: 20px;
+            background: linear-gradient(to bottom, transparent, #f82249);
+            margin: 0 auto;
+        }
+
+        .fa-coffee {
+            color: #28a745;
+        }
+
+        .fa-microphone, .fa-star {
+            color: #f82249;
+        }
+
+        .fa-users {
+            color: #0e1b4d;
+        }
+    </style>
 </head>
 
 <body>
@@ -98,25 +289,136 @@
 <br/>
 <br/>
 
-<section id="schedule" class="section-with-bg">
-    <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-        <a name="detailed-program" class="name_adjust"></a>
-        <div class="section-header">
-            <h2>Detailed Program</h2>
+<main id="main">
+    <section id="schedule" class="section-with-bg">
+        <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <a name="detailed-program" class="name_adjust"></a>
+            
+            <div class="program-header">
+                <h2>Program Schedule</h2>
+            </div>
+
+            <!-- Introduction -->
+            <div class="schedule-item intro" data-aos="fade-up">
+                <span class="time-badge">14:30 - 14:45</span>
+                <span class="schedule-type">Introduction</span>
+                <div class="schedule-duration">15 minutes</div>
+                <h3 class="schedule-title"><i class="fa fa-users"></i> ACTE - Opening Session</h3>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Keynote 1 -->
+            <div class="schedule-item keynote" data-aos="fade-up">
+                <span class="time-badge">14:45 - 15:15</span>
+                <span class="schedule-type">Keynote</span>
+                <div class="schedule-duration">30 minutes (25 min talk + 5 min Q&A)</div>
+                <h3 class="schedule-title">On-device derivation of IoT usage control policies: Automating U-XACML policy generation from natural language with LLMs in smart homes environments</h3>
+                <div class="schedule-speaker">
+                    <i class="fa fa-star"></i>
+                    <span>Andrea Saracino</span>
+                </div>
+                <div class="schedule-abstract">
+                    <span class="abstract-preview">
+                        In this paper, we present a framework that integrates AI-based derivation of Access and Usage Control policies for IoT devices, using Large Language Models (LLMs) to automate the generation of policies from unstructured natural language commands...
+                    </span>
+                    <span class="abstract-full">
+                        The framework employs a hybrid approach, combining LLMs with dedicated libraries to ensure efficient on-device execution. Our approach is based on a two-step process: first, a fine-tuned LLM converts user commands into structured JSON policy representations; then, a transformation module translates the JSON policies into fully compliant U-XACML policies. To ensure generality across different domains, we introduce a taxonomy-driven dataset creation, which enables policy creation for different environments such as smart homes, smart offices, and healthcare settings. Our evaluation demonstrates that the system achieves 93% accuracy in policy generation and 91% accuracy when handling ambiguous or noisy inputs. It also reaches 98% agreement with expert-defined policies in real-world scenarios. Finally, on-device performance evaluations confirm the feasibility of running the model in practical settings, demonstrating reliable inference under constrained hardware conditions.
+                    </span>
+                    <button class="expand-btn" onclick="toggleAbstract(this)">Read more <i class="fa fa-chevron-down"></i></button>
+                </div>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Speaker 1 -->
+            <div class="schedule-item speaker" data-aos="fade-up">
+                <span class="time-badge">15:15 - 15:30</span>
+                <span class="schedule-type">Speaker</span>
+                <div class="schedule-duration">15 minutes (10 min talk + 5 min Q&A)</div>
+                <h3 class="schedule-title">Leveraging LLMs for Cyber Threat Intelligence: Opportunities and Challenges</h3>
+                <div class="schedule-speaker">
+                    <i class="fa fa-microphone"></i>
+                    <span>Nicola Deidda</span>
+                </div>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Speaker 2 -->
+            <div class="schedule-item speaker" data-aos="fade-up">
+                <span class="time-badge">15:30 - 16:00</span>
+                <span class="schedule-type">Speaker</span>
+                <div class="schedule-duration">30 minutes (25 min talk + 5 min Q&A)</div>
+                <h3 class="schedule-title">It's all about the journey and not the destination: Placing cybersecure generative AI models on the Market</h3>
+                <div class="schedule-speaker">
+                    <i class="fa fa-microphone"></i>
+                    <span>Margaret Varilek & Federica Casarosa</span>
+                </div>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Coffee Break -->
+            <div class="schedule-item break" data-aos="fade-up">
+                <span class="time-badge">16:00 - 16:30</span>
+                <span class="schedule-type">Coffee Break</span>
+                <div class="schedule-duration">30 minutes</div>
+                <h3 class="schedule-title"><i class="fa fa-coffee"></i> Networking & Refreshments</h3>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Keynote 2 -->
+            <div class="schedule-item keynote" data-aos="fade-up">
+                <span class="time-badge">16:30 - 17:00</span>
+                <span class="schedule-type">Keynote</span>
+                <div class="schedule-duration">30 minutes (25 min talk + 5 min Q&A)</div>
+                <h3 class="schedule-title">Criminal Misuse of Generative AI: Legal Constraints, Risks, and Responsibilities</h3>
+                <div class="schedule-speaker">
+                    <i class="fa fa-star"></i>
+                    <span>Gaia Fiorinelli</span>
+                </div>
+                <div class="schedule-abstract">
+                    <span class="abstract-preview">
+                        The speech explores the criminal misuse of Generative AI (GenAI), emphasizing how its democratization has facilitated exploitation by cybercriminals...
+                    </span>
+                    <span class="abstract-full">
+                        It discusses the risks associated with GenAI and highlights the need for new legal frameworks to address these (cyber) threats. The speech also touches on the responsibility of AI developers for self-regulation and advocates for a balanced approach that integrates criminal law, AI regulation, and cybersecurity measures to mitigate misuse while fostering innovation.
+                    </span>
+                    <button class="expand-btn" onclick="toggleAbstract(this)">Read more <i class="fa fa-chevron-down"></i></button>
+                </div>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Speaker 3 -->
+            <div class="schedule-item speaker" data-aos="fade-up">
+                <span class="time-badge">17:00 - 17:15</span>
+                <span class="schedule-type">Speaker</span>
+                <div class="schedule-duration">15 minutes (10 min talk + 5 min Q&A)</div>
+                <h3 class="schedule-title">Ethical, Legal, and Societal Risks of Generative AI in Medicine — Lessons from Ophthalmology</h3>
+                <div class="schedule-speaker">
+                    <i class="fa fa-microphone"></i>
+                    <span>Dennis Glenn Ejeh</span>
+                </div>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Conclusion -->
+            <div class="schedule-item conclusion" data-aos="fade-up">
+                <span class="time-badge">17:15 - 17:30</span>
+                <span class="schedule-type">Closing</span>
+                <div class="schedule-duration">15 minutes</div>
+                <h3 class="schedule-title"><i class="fa fa-users"></i> Hands-on Closing Session</h3>
+            </div>
+
         </div>
-        <div style="min-height: 30vh">
-            <h2>To Be Defined</h2>
-        </div>
-    </div>
-
-</section>
-
-
+    </section>
 </main>
 
 <div id="fillSubscribe"></div>
-
-</section>
 
 <!--==========================
   Footer
@@ -145,6 +447,26 @@
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
 <script src="js/mobileMenu.js"></script>
+
+<!-- Schedule Interaction Script -->
+<script>
+    function toggleAbstract(button) {
+        const abstractDiv = button.parentElement;
+        const fullText = abstractDiv.querySelector('.abstract-full');
+        const previewText = abstractDiv.querySelector('.abstract-preview');
+        
+        if (fullText.style.display === 'none' || fullText.style.display === '') {
+            fullText.style.display = 'inline';
+            previewText.style.display = 'none';
+            button.innerHTML = 'Read less <i class="fa fa-chevron-up"></i>';
+        } else {
+            fullText.style.display = 'none';
+            previewText.style.display = 'inline';
+            button.innerHTML = 'Read more <i class="fa fa-chevron-down"></i>';
+        }
+    }
+</script>
+
 </body>
 
 </html>
