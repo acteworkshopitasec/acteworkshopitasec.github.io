@@ -487,12 +487,13 @@ h6 {
 --------------------------------------------------------------*/
 
 #intro {
-  width: 100%;
-  height: 100vh;
-  background: url(../img/backgrounds/pexels-dominikagregus-4730997.jpg) center center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
 
 #intro:before {

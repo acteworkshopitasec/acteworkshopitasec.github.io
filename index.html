@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ACTE26 - Anticipating Cyber Threats’ Evolution</title>
+    <title>ACTE 2027 - ACTE and PALS workshops</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -27,146 +27,83 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- ACTE / PALS header, home page chooser and workshop pages -->
+    <link href="css/workshops.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="ws-home">
 
 <!--==========================
-  Header
+  Header: logo + the two workshop buttons
 ============================-->
-<header id="header">
+<header id="header" class="ws-header">
     <div class="container">
-
-        <div class="desktop-menu">
-
-            <div id="logo" class="pull-left">
-                <!-- Uncomment below if you prefer to use a text logo -->
-                <h1><a href="#">ACTE2026</a></h1>
-                <!--a href="#intro" class="scrollto"><img src="img/logo-opodis.png" alt="" title=""></a-->
-            </div>
-
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="#intro">Home</a></li>
-                    <li><a href="cfa.html">Call For Abstract</a></li>
-                    <li><a href="cfa.html#dates">Dates</a></li>
-                    <li class="past-editions">
-                        <a>Past Editions</a>
-                        <ul id="past-editions" class="sub-nav"></ul>
-                    </li>
-                    <li><a href="#committees">Committees</a></li>
-                    <li><a href="program.html">Program</a></li>
-                    <li><a href="#venue">Venue</a></li>
-                </ul>
-            </nav><!-- #nav-menu-container -->
-
-
+        <div id="logo" class="pull-left">
+            <h1><a href="index.html">ACTE</a></h1>
         </div>
+        <nav class="ws-switch" aria-label="Workshops">
+            <a href="acte/acte.html" class="ws-btn">ACTE<span class="ws-long"> workshop</span></a>
+            <a href="https://icissp.scitevents.org/PALS.aspx" class="ws-btn">PALS<span class="ws-long"> workshop</span></a>
+        </nav>
+    </div>
 
-        <div class="mobile-menu">
-            <!-- Top Navigation Menu -->
-            <div class="topnav">
-                <div id="logo" class="pull-left">
-                    <!-- Uncomment below if you prefer to use a text logo -->
-                    <h1><a href="#">ACTE2026</a></h1>
-                </div>
-                <div id="myLinks" style="display: none;">
-                    <ul class="menu">
-                        <li class="menu-active"><a href="#intro">Home</a></li>
-                        <li><a href="cfa.html">Call For Abstract</a></li>
-                        <li><a href="cfa.html#dates">Dates</a></li>
-                        <li class="past-editions">
-                            <a href="#" id="btn-mobile-menu">Past Editions<span><i>></i></span></a>
-                            <ul id="past-editions-mobile" class="sub-nav"></ul>
-                        </li>
-                        <li><a href="#committees">Committees</a></li>
-                        <li><a href="program.html">Program</a></li>
-                        <li><a href="#venue">Venue</a></li>
-                    </ul>
-                </div>
-                <a href="#" id="burger-menu-mobile" class="icon">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
+    <!-- Kept empty and hidden: js/loadHtml.js and js/mobileMenu.js may still look for these ids.
+         Remove once those scripts no longer reference them. -->
+    <div hidden>
+        <ul id="past-editions"></ul>
+        <ul id="past-editions-mobile"></ul>
+        <div id="myLinks"></div>
+        <a id="burger-menu-mobile"></a>
+        <a id="btn-mobile-menu"></a>
     </div>
 </header><!-- #header -->
-
-<!--==========================
-  Intro Section
-============================-->
-<section id="intro" style="background: url(img/backgrounds/cagliari-660263.jpg) center center;">
-    <div class="intro-container wow fadeIn">
-        <h1 class="mb-4 pb-0">2nd Anticipating Cyber Threats’ Evolution (ACTE) workshop</h1>
-        <h2 class="mb-4 pb-0">Co-located with ITASEC26 and SERICS</h2>
-        <p class="mb-4 pb-0">February 9-13, 2026 - Cagliari</p>
-        <!-- <p><strong>News: </strong>3 keynotes, 25 presentations, one industry presentation.</p> -->
-        <a href="#about" class="about-btn scrollto">About ACTE2026</a>
-        <!-- <a href="accepted-papers.html" class="about-btn scrollto">Accepted papers</a> -->
-        <a href="#subscribe" class="about-btn scrollto">Submission and Registration</a>
-    </div>
-</section>
 
 <main id="main">
 
     <!--==========================
-      About Section
+      Choose a workshop
     ============================-->
-    <section id="about" style="background: none; background-color: rgba(6, 12, 34, 0.98);">
-        <div class="container">
-            <div class="col">
-                <div class="col-lg-12">
-                    <h2>About ACTE 2026</h2>
-                    <p>
-                        The 2nd Anticipating Cyber Threats' Evolution (ACTE) workshop returns with a multidisciplinary
-                        examination of one of the most innovative and challenging frontiers in cybersecurity: Generative
-                        Artificial Intelligence (Gen-AI). As generative models transform the digital landscape, enabling
-                        new forms of creativity, automation, and innovation, they also introduce unprecedented risks
-                        related to data integrity, privacy, misinformation, and attack surface expansion.
-                    </p>
+    <section id="choose">
+        <div class="choose-head wow fadeIn">
+            <!-- EDIT: umbrella title and one line under it -->
+            <h1>ACTE (Anticipating Cyber Threats’ Evolution)</h1>
+            <p>Two workshops under one roof. Choose the one you want to attend.</p>
+        </div>
+        <div class="choose-panels">
+            <!-- EDIT: ACTE card -->
+            <a href="acte/acte.html" class="choose-panel" style="background-image: url(img/backgrounds/siena-1532600760.jpg);">
+                <span class="choose-acronym">ACTE</span>
+                <span class="choose-name">3rd Anticipating Cyber Threats’ Evolution</span>
+                <!-- <span class="choose-desc">[One sentence on what the ACTE workshop is about.]</span> -->
+                <span class="choose-date"><i class="fa fa-calendar"></i> February 8, 2027 - Siena</span>
+                <span class="choose-cta">Go to the ACTE workshop</span>
+            </a>
 
-                    <p>
-                        This year's edition will chart the two-edged nature of Gen-AI through technological, legal,
-                        ethical, and policy lenses, featuring threat landscapes and mitigation measures. Specific
-                        emphasis will be put on the use of synthetic data for privacy-preserving and secure innovation,
-                        along with governance frameworks necessary to underpin accountability and resilience in
-                        AI-powered ecosystems. The workshop provides Ph.D. students and researchers with a chance to
-                        exchange perspectives, and contribute to developing sound, multidisciplinary approaches to
-                        securing the future of generative technologies.
-                    </p>
-                </div>
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h3>Where</h3>
-                            <p>Cagliari, Facoltà di Ingegneria e Architettura, Piazza D’Armi</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <h3>When</h3>
-                            <p>February 9-13, 2026 - Cagliari</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- EDIT: PALS card -->
+            <a href="https://icissp.scitevents.org/PALS.aspx" class="choose-panel" style="background-image: url(img/backgrounds/valletta-79f655e2224-3536449363.jpg);">
+                <span class="choose-acronym">PALS</span>
+                <span class="choose-name">“Privacy, AI, Law and Security” workshop</span>
+                <!-- <span class="choose-desc">[One sentence on what the PALS workshop is about.]</span> -->
+                <span class="choose-date"><i class="fa fa-calendar"></i> 22 - 24 February, 2027 - Valletta, Malta</span>
+                <span class="choose-cta">Go to the PALS workshop</span>
+            </a>
         </div>
     </section>
 
     <!--==========================
-      About Section
+      The Team
     ============================-->
-    <section id="committees">
-        <div class="container wow fadeInRightBig">
+    <section id="team">
+        <div class="container">
             <div class="section-header">
-                <br>
-                <h2>Committees</h2>
+                <h2>The Team</h2>
             </div>
             <section id="chairs">
-
                 <div class="chairs-list">
                     <div class="chair-description">
                         <div class="chair-img-profile">
-                            <img src="img/chairs/alvisi.webp">
+                            <img src="img/chairs/alvisi.webp" alt="Lorenzo Alvisi">
                         </div>
                         <div class="chair-info">
                             <h4>Lorenzo Alvisi</h4>
@@ -176,7 +113,7 @@
 
                     <div class="chair-description">
                         <div class="chair-img-profile">
-                            <img src="img/chairs/bianchi.jpeg">
+                            <img src="img/chairs/bianchi.jpeg" alt="John Bianchi">
                         </div>
                         <div class="chair-info">
                             <h4>John Bianchi</h4>
@@ -186,7 +123,7 @@
 
                     <div class="chair-description">
                         <div class="chair-img-profile">
-                            <img src="img/chairs/ciaramella.jpg">
+                            <img src="img/chairs/ciaramella.jpg" alt="Giovanni Ciaramella">
                         </div>
                         <div class="chair-info">
                             <h4>Giovanni Ciaramella</h4>
@@ -196,7 +133,7 @@
 
                     <div class="chair-description">
                         <div class="chair-img-profile">
-                            <img src="img/chairs/petrillo.jpeg">
+                            <img src="img/chairs/petrillo.jpeg" alt="Luca Petrillo">
                         </div>
                         <div class="chair-info">
                             <h4>Luca Petrillo</h4>
@@ -206,7 +143,7 @@
 
                     <div class="chair-description">
                         <div class="chair-img-profile">
-                            <img src="img/chairs/seferi.jpg">
+                            <img src="img/chairs/seferi.jpg" alt="Fabio Seferi">
                         </div>
                         <div class="chair-info">
                             <h4>Fabio Seferi</h4>
@@ -216,7 +153,7 @@
 
                     <div class="chair-description">
                         <div class="chair-img-profile">
-                            <img src="img/chairs/tibido.jpg">
+                            <img src="img/chairs/tibido.jpg" alt="Sara Tibidò">
                         </div>
                         <div class="chair-info">
                             <h4>Sara Tibidò</h4>
@@ -226,7 +163,7 @@
 
                     <div class="chair-description">
                         <div class="chair-img-profile">
-                            <img src="img/chairs/zucca.jpeg">
+                            <img src="img/chairs/zucca.jpeg" alt="Maria Vittoria Zucca">
                         </div>
                         <div class="chair-info">
                             <h4>Maria Vittoria Zucca</h4>
@@ -234,60 +171,17 @@
                         </div>
                     </div>
                 </div>
-
             </section>
         </div>
     </section>
 
-    <section id="venue" class="wow fadeInLeftBig">
-        <div class="container-fluid">
-            <div class="section-header">
-                <h2>Venue</h2>
-                <p>Venue location info</p>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col-lg-6 venue-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d750.644950256468!2d9.108142182232847!3d39.23011328183398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e734199b6f12e9%3A0x987f30ebb84d7817!2sFacolt%C3%A0%20di%20Ingegneria%20e%20Architettura%20-%20Universit%C3%A0%20di%20Cagliari!5e0!3m2!1sit!2sit!4v1762204796660!5m2!1sit!2sit"
-                            width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div class="row">
-                        <div class="logos-org">
-                            <div class="org-logo">
-                                <img src="img/logos/itasec-logo.webp" style="width: 200px;">
-                            </div>
-                            <div class="org-logo">
-                                <img src="img/logos/serics.webp" style="width: 200px;">
-                            </div>
-                            <div class="org-logo">
-                                <img src="img/logos/cini.webp" style="width: 200px;">
-                            </div>
-                            <div class="org-logo">
-                                <img src="img/logos/Logo_LAB_2023-300x95.webp" style="width: 200px;">
-                            </div>
-                            <p>ACTE'26 is a co-located workshop with <a href="https://www.itasec.it/">ITASEC26 and
-                                SERICS</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--==========================
-      Registration Section (in to_reuse)
-    ============================-->
-    <div id="fillSubscribe"></div>
+    <!-- Kept so js/loadHtml.js finds the same elements as before -->
+    <div id="fillSubscribe" hidden></div>
 
 </main>
 
-
 <!--==========================
-  Footer
+  Footer (loaded from footer.html; the Useful Links column is hidden in css/workshops.css)
 ============================-->
 <footer id="footer">
 
@@ -306,9 +200,6 @@
 <script src="lib/wow/wow.min.js"></script>
 <script src="lib/venobox/venobox.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-<!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>

@@ -2,7 +2,7 @@ function loadFooter() {
     document.addEventListener("DOMContentLoaded", () => {
         const footerElement = document.getElementById("footer");
 
-        fetch("footer.html")
+        fetch("/footer.html")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
@@ -20,9 +20,13 @@ function loadFooter() {
 
 function loadSubscription() {
     document.addEventListener("DOMContentLoaded", () => {
-        const footerElement = document.getElementById("fillSubscribe");
+        const element = document.getElementById("fillSubscribe");
 
-        fetch("subscribeSection26.html")
+        if (!element) return;
+
+        const file = element.dataset.subscribeFile;
+
+        fetch(file)
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
@@ -30,10 +34,10 @@ function loadSubscription() {
                 return response.text();
             })
             .then(data => {
-                footerElement.innerHTML = data;
+                element.innerHTML = data;
             })
             .catch(error => {
-                console.error("Error loading footer:", error);
+                console.error("Error loading subscription:", error);
             });
     });
 }
@@ -42,7 +46,7 @@ function loadPastEditionsVersion() {
     document.addEventListener("DOMContentLoaded", () => {
         const footerElement = document.getElementById("past-editions");
 
-        fetch("pastEditions.html")
+        fetch("/pastEditions.html")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
@@ -62,7 +66,7 @@ function loadPastEditions() {
     document.addEventListener("DOMContentLoaded", () => {
         const footerElement = document.getElementById("past-editions-custom");
 
-        fetch("../../pastEditionsCustom.html")
+        fetch("/pastEditionsCustom.html")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");

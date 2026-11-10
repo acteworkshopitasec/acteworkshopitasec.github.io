@@ -1,0 +1,389 @@
+/* ==========================================================
+   ACTE 2027 – ACTE and PALS workshops
+   Header with the two workshop buttons, home page chooser,
+   dedicated workshop pages and footer tweak.
+   Loaded after css/style.css, reuses its colors and fonts.
+   ========================================================== */
+
+/* ---------- Header: logo + two buttons ---------- */
+#header.ws-header {
+  background: rgba(6, 12, 34, 0.98);
+  height: 80px;
+  padding: 0;
+}
+
+#header.ws-header > .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#header.ws-header #logo {
+  float: none;
+}
+
+#header.ws-header #logo h1 {
+  margin: 0;
+}
+
+.ws-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.ws-btn {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 9px 22px;
+  border: 2px solid #f82249;
+  border-radius: 50px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.ws-btn:hover,
+.ws-btn:focus,
+.ws-btn.active {
+  background: #f82249;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  #header.ws-header #logo h1 { font-size: 24px; }
+  .ws-btn { padding: 7px 16px; }
+  .ws-long { display: none; }   /* buttons read just "ACTE" / "PALS" on phones */
+}
+
+/* ---------- Home page: choose a workshop ---------- */
+#choose {
+  background: #060c22;
+  padding: 120px 30px 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-head {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.choose-head h1 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  margin: 0 0 8px;
+}
+
+.choose-head p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  margin: 0;
+}
+
+.choose-panels {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.choose-panel {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.choose-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 12, 34, 0.35) 0%, rgba(6, 12, 34, 0.92) 75%);
+  transition: opacity 0.4s;
+}
+
+.choose-panel > * {
+  position: relative;
+}
+
+.choose-panel:hover,
+.choose-panel:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.choose-panel:hover::before,
+.choose-panel:focus::before {
+  opacity: 0.8;
+}
+
+.choose-acronym {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: clamp(64px, 9vw, 120px);
+  line-height: 1;
+  letter-spacing: 2px;
+  padding-bottom: 18px;
+  margin-bottom: 16px;
+  border-bottom: 5px solid #f82249;
+  align-self: flex-start;
+}
+
+.choose-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.choose-desc {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 46ch;
+  margin-bottom: 14px;
+}
+
+.choose-date {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.choose-date i {
+  color: #f82249;
+  margin-right: 6px;
+}
+
+.choose-cta {
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 11px 30px;
+  border-radius: 50px;
+  border: 2px solid #f82249;
+  transition: background 0.3s;
+}
+
+.choose-panel:hover .choose-cta,
+.choose-panel:focus .choose-cta {
+  background: #f82249;
+}
+
+@media (max-width: 900px) {
+  #choose { padding: 110px 16px 40px; }
+  .choose-panels { grid-template-columns: 1fr; }
+  .choose-panel { min-height: 380px; padding: 28px; }
+  .choose-head h1 { font-size: 34px; }
+}
+
+/* ---------- The Team (home page) ---------- */
+#team {
+  padding: 60px 0;
+}
+
+/* ---------- Footer: hide the Useful Links column ---------- */
+#footer .footer-links {
+  display: none !important;
+}
+
+/* ---------- Dedicated workshop pages ---------- */
+
+/* Shorter hero than the home page */
+#intro.workshop-hero {
+  height: 70vh;
+  min-height: 480px;
+  padding-top: 80px;
+}
+
+#intro.workshop-hero h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#intro.workshop-hero .workshop-kicker {
+  color: #f82249;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.workshop-section {
+  padding: 60px 0;
+}
+
+.workshop-section.alt {
+  background: #f6f7fd;
+}
+
+.workshop-section .lead-text {
+  max-width: 760px;
+  margin: 0 auto 10px;
+  text-align: center;
+  color: #4f5671;
+}
+
+/* Topics */
+.topics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+  columns: 2;
+  column-gap: 40px;
+}
+
+.topics-list li {
+  break-inside: avoid;
+  padding: 10px 0 10px 28px;
+  position: relative;
+  color: #0e1b4d;
+  border-bottom: 1px solid #e3e6f2;
+}
+
+.topics-list li::before {
+  content: "\f00c"; /* Font Awesome check */
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #f82249;
+}
+
+@media (max-width: 768px) {
+  .topics-list {
+    columns: 1;
+  }
+}
+
+/* Important dates */
+.dates-list {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.dates-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 20px;
+  background: #fff;
+  border-left: 4px solid #f82249;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 10px rgba(6, 12, 34, 0.06);
+}
+
+.dates-list .date-label {
+  color: #0e1b4d;
+  font-weight: 600;
+}
+
+.dates-list .date-value {
+  color: #f82249;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .dates-list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Program table */
+.program-table-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.program-table th,
+.program-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e3e6f2;
+  text-align: left;
+  vertical-align: top;
+}
+
+.program-table th {
+  background: #060c22;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.program-table td.time {
+  color: #f82249;
+  font-weight: 700;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.program-table .speaker {
+  display: block;
+  color: #4f5671;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+/* Submission band */
+#submission {
+  background: #060c22;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#submission h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+#submission p {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 680px;
+  margin: 0 auto 24px;
+}
+
+/* Link to the other workshop */
+.workshop-switch {
+  padding: 40px 0;
+  text-align: center;
+  background: #f6f7fd;
+}
+
+.workshop-switch p {
+  margin-bottom: 14px;
+  color: #4f5671;
+}
